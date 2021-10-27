@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  font-family: 'Istok Web', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 21px;
+  margin: 50px;
+  padding-left: 50px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+  font-family: 'Istok Web', sans-serif;
+  color: white;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+}
+
+.info > img {
+  width: 400px;
+}
+
+.infotext {
+  padding: 50px;
+  width: 350px;
+}
+
+.infotext > .button {
+  background-color: white;
+  border-radius: 5%;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4A3257;
+  opacity: 0.4;
+}
+
+.infotext > .button:hover {
+  opacity: 1;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 130px;
+  top: 5%;
+  position: absolute;
+}
+
+.list-inline > li > a {
+  font-size: 24px;
+  color: #4A3257;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  body {
+
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  body {
+
+  }
+}
+@media (max-width: 550px) {
+  /* For a screen < 540px, this CSS will be read */
+  body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: none !important;
+    background-size: 400% 400%;
+  }
+}
